@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ms">
+<head>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -17,7 +18,6 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1515187340300611&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KitaDigital 40+ Starter Kit | Panduan Bisnes Digital untuk Pesara & Ibu Bapa Malaysia</title>
@@ -213,7 +213,7 @@ footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
       <div class="price-next">Lepas ni: <span>RM97</span></div>
     </div>
 
-    <a href="https://toyyibpay.com/KitaDigital40" class="btn-cta">
+    <a href="https://toyyibpay.com/KitaDigital40" class="btn-cta" onclick="fbq('track', 'InitiateCheckout', {value: 47.00, currency: 'MYR', content_name: 'KitaDigital 40+ Starter Kit'});">
       🛒 &nbsp;Ya, Saya Nak Starter Kit Ini!
       <small>Bayar selamat via FPX / Online Banking · Dapat terus selepas bayar</small>
     </a>
@@ -319,7 +319,7 @@ footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
       <div class="pricing-value">Nilai sebenar: RM350+</div>
       <div class="pricing-big">RM47</div>
       <div class="pricing-note">Early bird · Bayaran sekali · Terima terus selepas bayar</div>
-      <a href="https://toyyibpay.com/KitaDigital40" class="btn-cta-white">
+      <a href="https://toyyibpay.com/KitaDigital40" class="btn-cta-white" onclick="fbq('track', 'InitiateCheckout', {value: 47.00, currency: 'MYR', content_name: 'KitaDigital 40+ Starter Kit'});">
         🛒 &nbsp;Dapatkan Starter Kit — RM47
         <small>Bayar selamat via FPX / Online Banking</small>
       </a>
@@ -350,7 +350,7 @@ footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
     <h2>Tunggu Apa Lagi?<br><span>Mula Hari Ini Juga.</span></h2>
     <p>Usia 40+ bukan penghalang. Ia adalah kelebihan anda.<br>Yang anda perlukan cuma sistem yang betul.</p>
     <div class="final-btn-wrap">
-      <a href="https://toyyibpay.com/KitaDigital40" class="btn-cta">
+      <a href="https://toyyibpay.com/KitaDigital40" class="btn-cta" onclick="fbq('track', 'InitiateCheckout', {value: 47.00, currency: 'MYR', content_name: 'KitaDigital 40+ Starter Kit'});">
         🛒 &nbsp;Dapatkan KitaDigital 40+ Starter Kit  RM47
         <small>Jaminan Wang Balik 7 Hari · 50 Slot Early Bird · Terima Terus</small>
       </a>
@@ -366,7 +366,7 @@ footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
 
 <div class="sticky-bar">
   <div class="sticky-bar-text"><strong>KitaDigital 40+ Starter Kit</strong>6 Fail Digital · Early Bird RM47</div>
-  <a href="https://toyyibpay.com/KitaDigital40" class="sticky-bar-btn">Beli Sekarang</a>
+  <a href="https://toyyibpay.com/KitaDigital40" class="sticky-bar-btn" onclick="fbq('track', 'InitiateCheckout', {value: 47.00, currency: 'MYR', content_name: 'KitaDigital 40+ Starter Kit'});">Beli Sekarang</a>
 </div>
 
 <script>
@@ -380,6 +380,14 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
 }, { threshold: 0.12 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// FB Pixel — ViewContent event
+fbq('track', 'ViewContent', {
+  content_name: 'KitaDigital 40+ Starter Kit',
+  content_category: 'Digital Product',
+  value: 47.00,
+  currency: 'MYR'
+});
 </script>
 </body>
 </html>
