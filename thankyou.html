@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1515187340300611');
+fbq('track', 'PageView');
+
+// PURCHASE EVENT — Fire bila orang sampai Thank You page
+fbq('track', 'Purchase', {
+  value: 47.00,
+  currency: 'MYR',
+  content_name: 'KitaDigital 40+ Starter Kit',
+  content_type: 'product'
+});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1515187340300611&ev=Purchase&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tahniah! KitaDigital 40+ Starter Kit Anda Dah Siap</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(160deg, #0d1b2a 0%, #0f2340 60%, #080f1a 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .dots {
+    position: fixed; inset: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+  }
+
+  .card {
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .success-icon {
+    width: 80px; height: 80px;
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+    margin: 0 auto 24px;
+    box-shadow: 0 8px 32px rgba(22,163,74,0.3);
+    animation: popIn 0.5s 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  }
+
+  @keyframes popIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,168,76,0.12);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 100px;
+    padding: 6px 16px;
+    margin-bottom: 20px;
+  }
+  .badge-dot { width: 6px; height: 6px; background: #c9a84c; border-radius: 50%; }
+  .badge span { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #c9a84c; }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 6vw, 40px);
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  h1 span { background: linear-gradient(135deg, #c9a84c, #f0d080); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+  .subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+
+  .divider {
+    width: 50px; height: 3px;
+    background: linear-gradient(90deg, #c9a84c, transparent);
+    border-radius: 2px;
+    margin: 0 auto 28px;
+  }
+
+  .download-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .download-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #c9a84c, #f0d080, #c9a84c);
+  }
+
+  .download-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #c9a84c;
+    margin-bottom: 10px;
+  }
+
+  .download-title {
+    font-size: 16px; font-weight: 700;
+    color: #fff; margin-bottom: 6px;
+  }
+
+  .download-sub {
+    font-size: 13px; color: rgba(255,255,255,0.45);
+    margin-bottom: 20px; line-height: 1.5;
+  }
+
+  .files-list {
+    display: flex; flex-direction: column; gap: 8px;
+    margin-bottom: 22px; text-align: left;
+  }
+  .file-item {
+    display: flex; align-items: center; gap: 10px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+  }
+  .file-icon { font-size: 16px; flex-shrink: 0; }
+
+  .btn-download {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #c9a84c, #f0d080);
+    color: #0d1b2a;
+    font-size: 16px; font-weight: 800;
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 30px rgba(201,168,76,0.3);
+  }
+  .btn-download:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(201,168,76,0.45); }
+  .btn-download small { display: block; font-size: 11px; font-weight: 500; opacity: 0.6; margin-top: 3px; }
+
+  /* Timer */
+  .timer-wrap {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .timer-icon { font-size: 22px; flex-shrink: 0; }
+  .timer-text { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.5; text-align: left; }
+  .timer-text strong { color: #fff; display: block; }
+  .countdown { font-size: 22px; font-weight: 800; color: #c9a84c; font-variant-numeric: tabular-nums; flex-shrink: 0; margin-left: auto; }
+
+  /* Steps */
+  .steps-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 14px;
+    padding: 22px 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .steps-title {
+    font-size: 13px; font-weight: 700; color: #c9a84c;
+    letter-spacing: 1px; text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .step-row {
+    display: flex; align-items: flex-start; gap: 12px;
+    margin-bottom: 10px;
+  }
+  .step-num {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.35);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 800; color: #c9a84c;
+    flex-shrink: 0;
+  }
+  .step-desc { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+  .step-desc strong { color: #fff; }
+
+  /* WA button */
+  .btn-wa {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%;
+    background: #16a34a;
+    color: #fff;
+    font-size: 15px; font-weight: 700;
+    padding: 14px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.2s, opacity 0.2s;
+    margin-bottom: 20px;
+  }
+  .btn-wa:hover { transform: translateY(-2px); opacity: 0.9; }
+
+  footer-note {
+    display: block;
+    font-size: 12px; color: rgba(255,255,255,0.2);
+    margin-top: 20px; line-height: 1.7;
+  }
+  footer-note a { color: rgba(255,255,255,0.35); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="dots"></div>
+
+<div class="card">
+
+  <div class="success-icon">🎉</div>
+
+  <div class="badge">
+    <div class="badge-dot"></div>
+    <span>Bayaran Berjaya</span>
+  </div>
+
+  <h1>Tahniah, <span>Starter Kit<br>Anda Dah Siap!</span></h1>
+
+  <p class="subtitle">Bayaran anda telah berjaya diterima.<br>Download semua fail anda di bawah sekarang.</p>
+
+  <div class="divider"></div>
+
+  <!-- Countdown timer -->
+  <div class="timer-wrap">
+    <div class="timer-icon">⏱️</div>
+    <div class="timer-text">
+      <strong>Link download aktif selama:</strong>
+      Sila download sekarang
+    </div>
+    <div class="countdown" id="countdown">10:00</div>
+  </div>
+
+  <!-- Download card -->
+  <div class="download-card">
+    <div class="download-label">🎁 6 Fail Digital Anda</div>
+    <div class="download-title">KitaDigital 40+ Starter Kit — Lengkap</div>
+    <div class="download-sub">Klik butang di bawah untuk akses semua fail dalam Google Drive</div>
+
+    <div class="files-list">
+      <div class="file-item"><span class="file-icon">📘</span> Panduan Utama — 5 Langkah Bisnes Digital</div>
+      <div class="file-item"><span class="file-icon">📋</span> Bonus #1 — Worksheet Kemahiran → Produk</div>
+      <div class="file-item"><span class="file-icon">🤖</span> Bonus #2 — 10 Prompt ChatGPT Dalam BM</div>
+      <div class="file-item"><span class="file-icon">💬</span> Bonus #3 — Script WhatsApp & Caption FB</div>
+      <div class="file-item"><span class="file-icon">✅</span> Bonus #4 — Checklist 30 Hari Pertama</div>
+      <div class="file-item"><span class="file-icon">👥</span> Bonus #5 — Link Komuniti Telegram</div>
+    </div>
+
+    <a href="https://drive.google.com/drive/folders/1CcWrICS5UDws2ExH92aHQMKoE5TNhS2y?usp=drive_link" class="btn-download" target="_blank">
+      📥 &nbsp;Download Starter Kit Sekarang
+      <small>Klik untuk buka Google Drive folder anda</small>
+    </a>
+  </div>
+
+  <!-- Next steps -->
+  <div class="steps-card">
+    <div class="steps-title">📌 Apa Nak Buat Selepas Download?</div>
+    <div class="step-row">
+      <div class="step-num">1</div>
+      <div class="step-desc"><strong>Baca Panduan Utama</strong> dari Bab 1 — ambil masa 30 minit je</div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">2</div>
+      <div class="step-desc"><strong>Isi Worksheet (Bonus #1)</strong> — kenal pasti kemahiran anda dalam 15 minit</div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">3</div>
+      <div class="step-desc"><strong>Join Telegram</strong> — soal jawab dan sokongan dari komuniti 40+</div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">4</div>
+      <div class="step-desc"><strong>Ikut Checklist 30 Hari (Bonus #4)</strong> — satu hari satu langkah</div>
+    </div>
+  </div>
+
+  <!-- WA support -->
+  <a href="https://wa.me/60103115982?text=Salam%2C%20saya%20dah%20beli%20KitaDigital%2040%2B%20Starter%20Kit.%20Boleh%20bantu%20saya%3F" class="btn-wa" target="_blank">
+    💬 &nbsp;Ada Soalan? WhatsApp Kami Terus
+  </a>
+
+  <footer-note>
+    © 2026 KitaDigital 40+ &nbsp;|&nbsp; <a href="https://kitadigital40.com">kitadigital40.com</a><br>
+    P/S: Simpan email atau screenshot page ni sebagai rekod pembelian anda.
+  </footer-note>
+
+</div>
+
+<script>
+// Countdown timer 10 minit
+function startCountdown(duration) {
+  let timer = duration, minutes, seconds;
+  const display = document.getElementById('countdown');
+  const interval = setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    display.textContent = minutes + ':' + seconds;
+    if (--timer < 0) {
+      clearInterval(interval);
+      display.textContent = 'Expired';
+      display.style.color = '#ef4444';
+    }
+  }, 1000);
+}
+startCountdown(600); // 10 minit
+</script>
+
+</body>
+</html>
